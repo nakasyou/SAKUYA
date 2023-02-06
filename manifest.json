@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "SAKUYA",
+    "version": "0.1.0",
+    "description": "Ad",
+    "icons": {
+        "128": "assets/SAKUYA-icon.png"
+    },
+    "content_scripts": [
+        {
+          "matches": ["*://*/*"],
+          "js": ["core/content-script.js"],
+          "run_at": "document_start"
+        }
+    ],
+    "host_permissions": [
+        "*://*/*"
+    ],
+    "web_accessible_resources": [{
+        "resources": [
+          "*"
+        ],
+        "matches": [
+          "*://*/*"
+        ]
+    }]
+}
