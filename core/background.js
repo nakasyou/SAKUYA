@@ -11,7 +11,11 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
                 return;
             }
         }).then(data=>{
-            sendResponse("aad");
+            return chrome.storage.local.get(["blacklist"])
+        }).then(data=>{
+            return data.blacklist;
+        }).then(data=>{
+            sendResponse(data);
         })
         updateList();
     }
