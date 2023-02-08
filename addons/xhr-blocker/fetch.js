@@ -1,6 +1,7 @@
 export default function(window){
     const fetch=window.fetch;
-    return function(url){
-        return fetch(url);
+    return function(...args){
+        console.log(args[0])
+        return fetch(...args);
     }
 }

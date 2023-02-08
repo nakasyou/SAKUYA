@@ -23,5 +23,9 @@
         "matches": [
           "*://*/*"
         ]
-    }]
+    }],
+    "background" : {
+      "service_worker" : "core/background.js",
+      "type": "module"
+    }
 }

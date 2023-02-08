@@ -19,3 +19,7 @@ function appendScript(){
     }
 }
 appendScript();
+
+chrome.runtime.sendMessage("get-list",res=>{
+    alert(res);
+});
