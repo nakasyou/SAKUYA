@@ -14,8 +14,6 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
             sendResponse("aad");
         })
         updateList();
-
-        
     }
     return true;
 });
