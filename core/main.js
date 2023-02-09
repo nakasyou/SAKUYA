@@ -8,6 +8,7 @@ window.addEventListener("message",async(e)=> {
 
     SAKUYA.getURL=text=>data.SAKUYAURL+text;
     SAKUYA.window=window;
+    SAKUYA.list=data.list;
 
     const addonsFetch=await fetch(SAKUYA.getURL("../addons/addons.json"));
     const addonsData=await addonsFetch.json();

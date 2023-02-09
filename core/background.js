@@ -1,6 +1,5 @@
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     if(message==='get-list'){
-        
         chrome.storage.local.get(["blacklist"])
         .then(data=>{
             return data.blacklist
