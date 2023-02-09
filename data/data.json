@@ -1,5 +1,5 @@
 {
     "black_url":[
-        "*://doubleclick.net/*"
+        "*://*.doubleclick.net/*"
     ]
 }
