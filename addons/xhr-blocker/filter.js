@@ -4,7 +4,7 @@ export default function(resource,list){
     for(const black of list.black_url){
         const pattern=new URLPattern(black);
         if(pattern.test(url)){
-            return "about:blank";
+            return "https://cdn.jsdelivr.net/npm/package@version/file";
         }
     }
     return url;
