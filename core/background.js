@@ -22,7 +22,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
 });
 
 async function updateList(){
-    const res=await fetch("https://raw.githubusercontent.com/nakasyou/SAKUYA/main/data/black-list.json");
+    const res=await fetch("https://raw.githubusercontent.com/nakasyou/SAKUYA/main/data/data.json");
     const json=await res.json();
     await chrome.storage.local.set({blacklist:json});
 }
