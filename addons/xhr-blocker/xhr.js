@@ -1,9 +1,10 @@
-export default function(window){
+import filter from "./filter.js";
+
+export default function(window,list){
     return class extends window.XMLHttpRequest{
-        open(...args){
-            const url=args[1];
-            console.log(url);
-            super.open(...args);
+        open(method, url, ...args){
+            url=filter(url,list);
+            super.open(method,url,...args);
         }
     }
 }
