@@ -1,5 +1,6 @@
 {
     "addons":[
-        "xhr-blocker/main.js"
+        "xhr-blocker/main.js",
+        "element-deleter/main.js"
     ]
 }
