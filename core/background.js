@@ -27,3 +27,4 @@ async function updateList(){
     await chrome.storage.local.set({blacklist:json});
     console.log(await chrome.storage.local.get(["blacklist"]))
 }
+

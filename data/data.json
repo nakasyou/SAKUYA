@@ -2,7 +2,9 @@
     "black_url":[
         "*://*.doubleclick.net/*"
     ],
-    "black_element":[
-        ""
-    ]
+    "black_element":{
+        "id":[
+            "google_ads.*"
+        ]
+    }
 }
